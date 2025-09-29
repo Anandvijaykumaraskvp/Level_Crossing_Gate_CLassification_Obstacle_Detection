@@ -27,6 +27,27 @@ A **GUI app** is also provided for demonstration purposes.
   Dataset for object detection (organized in YOLO format: `images/train`, `images/val`, `labels/train`, `labels/val`).
   
 - **Please update dataset paths inside the notebooks (.ipynb) or scripts before execution.**
+- ## 📦 Pre-trained Models
+
+The repository includes the **best trained models** for quick testing and demonstration:
+
+- **Classification Model (YOLO-CLS)**  
+  Path: `Best model - yolo-cls.zip`
+
+- **Object Detection Model (YOLOv8)**  
+  Path: `best_yolov8n_model1 (2).zip`
+
+### ⚠️ Important
+- Please **extract these model files** before use.  
+- Update the **model paths** in your notebooks (`.ipynb`) and **GUI_App.py** before running.  
+  Example inside `GUI_App.py`:
+  ```python
+  # Classification model path
+  cls_model_path = "path/to/extracted/best_yolo_cls_model.pt"
+
+  # Detection model path
+  det_model_path = "path/to/extracted/best_yolov8_model.pt"
+
  
 - **README.md**  
   Project documentation (you are reading this).
